@@ -16,3 +16,7 @@ git restore
 
 ###Ver o log de commits e navegar entre eles para inspecionar o código
 git log
+#Vai estar (HEAD -> main) not commit mais atual selecionado
+
+
+
