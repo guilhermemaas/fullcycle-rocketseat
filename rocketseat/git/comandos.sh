@@ -17,6 +17,8 @@ git restore
 ###Ver o log de commits e navegar entre eles para inspecionar o código
 git log
 #Vai estar (HEAD -> main) not commit mais atual selecionado
-
-
-
+git checkout ID commit
+#Voltar pra mais atual
+git checkout main
+#Recuperar um arquivo
+git checkout ID_Commit -- arquivo.txt #Ele já vai pro stage área
