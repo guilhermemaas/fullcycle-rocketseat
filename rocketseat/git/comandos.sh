@@ -22,3 +22,6 @@ git checkout ID commit
 git checkout main
 #Recuperar um arquivo
 git checkout ID_Commit -- arquivo.txt #Ele já vai pro stage área
+
+#Forçar push
+git push --force-with-lease origin main
