@@ -1,0 +1,42 @@
+/*
+    color
+    text-tranform:: lowercase, capitalize (Primeiras letras das palavras em caixa alta)
+    text-decoration
+*/
+
+p {
+    text-transform: lowercase;
+}
+
+mark {
+    color: red;
+    text-transform: uppercase;
+    text-decoration: overline red double;
+}
+
+a {
+    color: pink;
+}
+
+p#align {
+    color: pink;
+    text-align: right;
+}
+
+/*
+    letter-spacing
+    word-spacing
+*/
+
+p#letter {
+    letter-spacing: 1rem;
+    word-spacing: 1rem;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap');
+p#web-fonts {
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    font-optical-sizing: auto;
+    font-weight: 10px;
+    font-style: normal;
+}

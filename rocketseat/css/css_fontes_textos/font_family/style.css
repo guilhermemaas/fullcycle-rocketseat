@@ -1,0 +1,18 @@
+/*Font Family*/
+p {
+    /* genéricos */
+    /*font-family: arial;*/
+    font-size: 20px;
+    /*font-family*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /*fallback, se não tiver Verdana > Geneva > ...*/
+}
+
+
+/*Font Size*/
+
+p#font-size {
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 900;
+}

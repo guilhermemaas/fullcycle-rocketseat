@@ -1,0 +1,23 @@
+/*
+Combinator:
+- Descendent
+- List
+- Next sibling
+- Child
+*/
+
+article p { /*"Descendent": entrando em article "pai", e pegando o filho dele "p" e aplicando*/;
+    color:red;
+}
+
+span, mark { /*List*/
+    color: blueviolet;
+}
+
+h2 + p { /*Next sibling - Pega o "parágrafo - p" onde tem um h2 como tag anterior*/
+    color:aqua
+}
+
+aside > ul { /*Child - Primeiro filho de aside que for ul*/
+    margin-top: 60px
+}

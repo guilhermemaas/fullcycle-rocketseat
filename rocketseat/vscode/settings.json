@@ -1,0 +1,26 @@
+{
+  "workbench.iconTheme": "material-icon-theme",
+  "security.workspace.trust.untrustedFiles": "open",
+  "editor.minimap.enabled": false,
+  "workbench.colorTheme": "Just Black + Comments",
+  "files.associations": {
+      "*.py": "python"
+  },
+  "[python]": {
+      "editor.formatOnType": true,
+      "editor.tabSize": 4
+  },
+  "editor.detectIndentation": false,
+  "github.copilot.enable": {
+      "*": false,
+      "plaintext": false,
+      "markdown": false,
+      "scminput": false
+  },
+  "editor.fontSize": 20,
+  "editor.lineHeight": 1.6,
+  "editor.tabSize": 2,
+  "editor.wordWrap": "on",
+  "editor.glyphMargin": true,
+  "files.autoSave": "afterDelay"
+}

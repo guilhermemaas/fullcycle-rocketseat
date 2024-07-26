@@ -1,0 +1,12 @@
+/*
+    Mais específico:
+    - style
+    - !important
+*/
+
+#title {
+   font-size: 80px/*!important*/; 
+   color: red
+}
+
+/* Se colocar o atributo style do html direto na tag é mais pesado */

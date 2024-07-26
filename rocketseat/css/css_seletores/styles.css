@@ -1,0 +1,22 @@
+/*
+    - type | element | tag
+    - id
+    - class
+    - atributo
+    - universal
+
+    p {} - tag/element
+    #paragrafo1 {} - id
+    .classe_exemplo {} - classe
+    [title] ou [title="titulo"] {} - atributo
+    * {} - Tudo na página
+
+*/
+
+[title="titulo"] {
+    color:pink
+}
+
+* {
+    background-color: blue;
+}

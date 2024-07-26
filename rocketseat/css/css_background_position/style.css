@@ -1,0 +1,13 @@
+/*
+background-position
+background-size
+*/
+
+body {
+    background-image: url("https://themes.getbootstrap.com/wp-content/themes/bootstrap-marketplace/assets/images/elements/bootstrap-stack.png");
+    background-repeat: no-repeat;
+    /* background-position-x: center; left, right*/
+    /*background-position-y: center; top*/
+    background-position: center;
+    background-size: cover;
+}

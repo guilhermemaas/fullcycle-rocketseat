@@ -1,0 +1,93 @@
+/*
+    Display Block:
+    1 - Ocupa toda a linha, como um "bloco"
+    2 - "width" e "height" são aplicados
+    3 - "padding", "margin", "border" funcionam por completo
+
+    > Elementos:
+    <div>, <main>, <header>, <section>, <p>, <h>
+
+
+div {
+    border: solid;
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    margin: 20px; /*É aplicado horizontalmente e verticalmente*/
+}
+*/
+/*
+    Display Inline:
+    1 - Ocupa apenas o espaço do conteúdo do elemento.
+    2 - Elementos poderão ficar "em linha".
+    3 - "width" e "height" não se aplicam
+    4 - Aplicamos apenas os valores horizontais de "margin", "padding" e "border".
+    
+    > Elementos:
+    <a>, <span>, <strong>, <em>
+
+
+span {
+    border: solid 2px;
+    margin: 5px; /*É aplicado apenar horizontalmente*/
+    padding: 60px;
+}
+*/
+
+#div_span {
+    margin: 5px;
+}
+
+/*
+.border {
+    border: solid red 4px;
+    border-width: 4px 2px 6px 15px; cima, direita, baixo, esquerda SENTIDO HORÁRIO
+    border-style: dotted solid double dashed; cima, direita, baixo, esquerda SENTIDO HORÁRIO
+    border-color: red green blue violet;
+}
+*/
+
+/*
+border-top-width: medium
+border-right-width: medium
+border-bottom-width: medium
+border-left-width: medium
+*/
+
+/* 
+#####################
+Largura e Altura
+#####################
+min e max sobescrevem width e height
+*/
+/*
+div, span {
+    border: solid;
+    min-width: 200px;
+    max-width: 300px;
+    width: 300px;
+    height: 150px;
+}
+*/
+
+/*##################
+MARGIN
+###################*/
+
+div, span {
+    border: solid red;
+    width: 200px;
+    height: 100px;
+}
+
+.margin {
+    /* margin: 30px; 
+    margin-top: 30px;
+    margin-bottom: 30px;*/
+    margin: auto; /*Só pega horizontal em elementos de bloco.*/
+}
+
+.padding {
+    box-sizing: border-box;
+    padding: 20px 40px 0 10px; /*vertical e horizontal, ou heixo block e heixo inline. Com 4 atributos, vai ser sentido horário. Direita, Cima, Baixo, Esquerda*/
+}

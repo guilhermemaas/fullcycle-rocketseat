@@ -1,0 +1,16 @@
+p {
+    color: #f09c;
+}
+
+body {
+    background-color: blueviolet;
+}
+
+div {
+    background-color: burlywood;
+}
+
+div#div-image-bg {
+    background-image: url("https://cdn.areademembros.com/files/instancia_2466/image/QME5ijFXdYWjWDPGcFrcGQLzbJQuUi8mrj4xsf8X.png");
+    background-repeat: no-repeat;
+}

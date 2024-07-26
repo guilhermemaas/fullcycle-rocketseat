@@ -1,0 +1,39 @@
+/* Especifidade
+- Cada seletor tem um peso
+- Soma dos pesos faz a declaração ser aplicada
+
+#id - 100
+.class - 10
+element - 1
+*/
+
+p#text.green { /* 1,1,1 Maior peso*/
+    color:beige
+}
+
+#text {
+    color: brown /* 1,0,0 - Maior prioridade em especifidade*/
+}
+
+.green {
+    color: blueviolet /* 0,1,0 - Segundo Maior prioridade em especifidade*/
+}
+
+p {
+    color: aqua /* 0,0,1 - Menor prioridade em especifidade*/
+}
+
+
+/* No caso abaixo, quando são definições CSS de mesma especifidade, o que vale é o "cascade"/"cascata", o blue que vai valer.*/
+
+h1 {
+    color: red
+}
+
+h1 {
+    color: green
+}
+
+h1 {
+    color: blue
+}
