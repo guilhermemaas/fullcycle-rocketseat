@@ -1,0 +1,47 @@
+header {
+  padding-block: 32px;
+  font: var(--text-md);
+}
+
+header .container {
+  display: flex; /*Uma coisa no lado da outra*/
+  justify-content: space-between; /*Afasta os objetos dentro do container horizontalmente*/
+  align-items: center; /*Alinha verticalmente ao centro*/
+}
+
+#profile {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+#profile img {
+  width: 176px;
+  height: 176px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+#profile > div { /*primeiro div filho de profile*/
+  max-width: 384px;
+}
+
+#profile h1 {
+  font: var(--text-lg);
+  color: var(--text-color-primary);
+  margin-bottom: 8px;
+}
+
+#info {
+  list-style: none;
+  display: flex; /*Um no laodo do outro*/
+  flex-direction: column; /*Direção de coluna*/
+  gap: 16px; /*distância entre objetos flex*/
+  width: 280px;
+}
+
+#info li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}

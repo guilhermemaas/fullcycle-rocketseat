@@ -1,0 +1,29 @@
+nav {
+  display: flex; /*Um objeto ao lado do outro*/
+  justify-content: space-between; /*Cria um espaçamento entre os objetos da nav*/
+  align-items: center; /*Centraliza no eixo principal*/
+  
+  line-height: 0; /*Remove espaço extra vertical*/
+  padding-block: 20px; /*Aplica espaço no eixo y, em cima e embaixo*/
+
+  background-color: var(--surface-color);
+}
+
+nav ul {
+  list-style: none; /*Tira a bolinha da ul/lista*/
+  display: flex; /*Um objeto ao lado do outro*/
+  align-items: center; /*Centraliza no eixo principal*/
+  padding-block: 8px; /*Em cima e em baixo*/
+  gap: 24px; /*Espaço entre elementos*/
+}
+
+nav ul li:last-child img { /*Pegar o último filho li da ul e alterar o comportamento da imagem - Seletor de sudo class*/
+  width: 40px;
+  height: 40px;
+  object-fit: cover; /*Vai cobrir todo o espaço de 40 por 40px*/
+  border-radius: 50%;
+}
+
+nav a {
+
+}

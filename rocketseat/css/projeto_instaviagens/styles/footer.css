@@ -1,0 +1,11 @@
+footer {
+  display: flex;
+  gap: 24px;
+  padding-block: 24px;
+  
+  font: 14px/150% var(--font-fammily);
+}
+
+footer span:nth-child(1) { /*Se o primeiro filho fosse um link(a) de span, então seria child(2) por que o child(1) seria o ahref.*/
+  margin-right: auto;
+}

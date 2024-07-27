@@ -12,9 +12,36 @@
   --shape-transparency: #ffffff8f;
   --text-color-primary: #313131;
   --text-color-secondary: #6C6C6C;
+
+  --font-fammily: "Poppins", sans-serif;
+  --text-lg: bold 32px/125% var(--font-fammily);
+  --text: 16px/150% var(--font-fammily);
+  --text-md: 14px/170% var(--font-fammily);
+  --text-sm: 12px/170% var(--font-fammily);
 }
 
 body {
+  font: var(--text);
   color: var(--text-color-secondary);
   background-color: var(--background-color)
+}
+
+a {
+  text-decoration: none; /*Aquele _ Inderline do link*/
+  color: inherit; /*Cor herdada do pai, que nesse caso é o body*/
+}
+
+a:hover { /*sudo class hover, é o que vai ocorrer quando passar em cima do link(a)*/
+  color: var(--brand-color);
+  text-decoration: underline;
+}
+
+.container { /*Definições padrão para todos os containers, por exemplo borda horizontais e verticais (Laterais).*/
+  padding-inline: 32px; /*Um valor pros dois lados, 2 valores dir. esq*/
+  max-width: 1280px; /*Tem que levar em consideração padding dos containers*/
+  margin-inline: auto; /*Horizontal/lateral*/
+}
+
+.bg-surface-color {
+  background-color: var(--surface-color);
 }

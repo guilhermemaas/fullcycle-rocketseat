@@ -1,0 +1,11 @@
+main {
+  display: flex;
+  flex-wrap: wrap; /*Vai ocupar o espaço disponível na tela*/
+  gap: 24px;
+  padding-block: 24px; /*Preenchimento de 24px ao redocker desse block*/
+}
+
+main img {
+  width: 286px;
+  height: 286px;
+}
