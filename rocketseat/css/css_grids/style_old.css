@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+}
+
+#app {
+  display: grid; /*Os filhos recebem os atributos display: grid*/
+  /* grid-template-columns: 100px 200px 300px; */
+  /* grid-template-columns: 1fr 1fr 1fr; fraciona/quebra em partes */
+  /*grid-template-columns: repeat(6, 1fr); fraciona/quebra em partes, repete 3. Se colocar um número maior vai guardar uma parte em branco pra futuros objetos.*/
+  /* display: inline-grid; */
+  /* grid-template-columns: repeat(4, 1fr); */
+  /* grid-template-columns: 150px 1fr; */
+  /* grid-template-rows: 200px 1fr; */
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  height: 100vh;
+
+  border: 2px solid green;
+}
+
+/* #app > div { */
+#app > * {
+  border: 1px solid red;
+}
+
+/* span { */
+  /* border: 1px solid blue; */
+/* } */
+
+/* #app div:nth-child(1) { Primeira div dentro de #app */
+  #app header {
+  grid-column-start: 1;
+  grid-column-end: 4; /*Se quer que a div um preencha o espaço de 2 de 4, tem que coemçar na linha virtual 1, e terminar na terceira linha virtual. Pois a segunda linha virtual divide os objetos 1 e 2.*/
+}
+
+/* #app div:nth-child(2) { */
+  #app main {
+  /* grid-column-start: 1; */
+  /* grid-column-end: 4; */
+  grid-column: 1/3; /*short*/
+}
+
+/* #app div:nth-child(4) { */
+  #app footer {
+  /* grid-column-start: 1; */
+  /* grid-column-end: 4; */
+  grid-column: 1/4; /*short*/
+}

@@ -1,0 +1,31 @@
+* {
+  margin: 0; /*Reseta o CSS, tira a margem de todos os elementos*/
+  box-sizing: border-box; 
+  /*
+  box-sizing: border-box; - Esta propriedade altera o modelo de caixa CSS padrão. Normalmente, o modelo de caixa padrão (content-box) calcula a largura e a altura de um elemento somente com base em seu conteúdo, o que significa que padding e bordas são adicionadas à largura/altura total declarada, podendo fazer com que o elemento seja maior do que o especificado. Com box-sizing: border-box, a largura e a altura do elemento incluirão o padding e a borda, mas não a margem. Isso simplifica muito o design da layout, especialmente quando você precisa que os elementos tenham dimensões exatas mesmo após adicionar padding e bordas.
+  */
+}
+
+.grid {
+  display: grid;
+
+grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 8px;
+
+  /* align-items: end; */
+  /*align - horizontal, eixo x*/
+  
+  /* justify-items: center; */
+  /*justify - vertical, eixo y*/
+
+  place-items: center; /*aplica eixo x e y*/
+
+  height: 100vh; /*100% point view height (a tela toda)*/
+  width: 100vw; /*100% point view width*/
+  background-color: black;
+}
+
+.grid > div {
+  background-color: cornflowerblue;
+}
