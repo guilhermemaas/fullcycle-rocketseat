@@ -59,3 +59,21 @@ img {
 main {
   margin-top: 40px;
 }
+
+.content-tag {
+  display: inline-block;
+  background-color: var(--brand-color-dark);
+  padding: 4px 8px; /*4px em cima e embaixo, e 8px nas laterais*/
+  border-radius: 4px;
+  font: 500 10px/1.2 var(--font-family);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-color-primary);
+  box-shadow: 0px 4px 16px rgba(2, 6, 23, 0.251); 
+  /*
+  0px - O quanto a shadow se moveu no eixo horizontal
+  0px - O quanto  ashadow se moveu no eixo vertical
+  20px - Espalhamento/borrar a sombra.
+  black - Cor da sombra
+  */
+}

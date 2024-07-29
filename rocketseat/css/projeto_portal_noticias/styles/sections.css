@@ -4,3 +4,70 @@
     object-fit: cover;
   }
 }
+
+.card { /*Mesmo que .card::before, é um self...*/
+  border-radius: 4px;
+  overflow: hidden; /*Evitar transbordo pra fora da caixa*/
+  position: relative;
+
+  &::before { 
+    content: "";
+    /* background-color: white; */
+    inset: 0;
+    top: 50%; /*começa da metade*/
+    position: absolute;
+    background: linear-gradient(
+      180deg, /*180 graus*/
+      transparent 0%,
+      #020617 100%
+    )
+  }
+
+  figcaption { /*pro texto do figcaption não transbordar e ficar perto de margem inferior (bottom)*/
+    position: absolute;
+    bottom: 0;
+    padding: 24px;
+    
+    h2 {
+      margin-top: 8px;
+    }
+  }
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+.card
+position: relative;
+Esta propriedade é crucial porque define o elemento .card como o contexto de posicionamento para quaisquer elementos filhos posicionados de forma absoluta (como o ::before pseudo-elemento). Com isso, o pseudo-elemento será posicionado relativamente ao elemento .card, não ao documento inteiro.
+.card::before
+Este é um pseudo-elemento que é usado para criar um elemento "fantasma" dentro do elemento com a classe .card. Os pseudo-elementos ::before e ::after são frequentemente usados para adicionar decoração, estilo, ou conteúdo extra que não faz parte do conteúdo HTML principal.
+
+content: "";
+
+Esta propriedade é obrigatória para pseudo-elementos ::before e ::after. Ela define o que aparece no pseudo-elemento. Neste caso, é uma string vazia, indicando que não há conteúdo textual, mas o pseudo-elemento ainda pode ser usado para estilos visuais, como um fundo.
+background-color: white;
+
+Define a cor de fundo do pseudo-elemento como branco. Isso significa que ele pode ser usado para cobrir ou colorir o fundo do elemento .card.
+inset: 0;
+
+Esta é uma propriedade abreviada que substitui top: 0, right: 0, bottom: 0, e left: 0. Basicamente, ela posiciona o pseudo-elemento de modo que ele preencha completamente o elemento pai (.card). Isso garante que o pseudo-elemento ::before tenha o mesmo tamanho e posição que o elemento .card.
+position: absolute;
+
+Esta propriedade tira o pseudo-elemento do fluxo normal do documento e o posiciona em relação ao elemento pai mais próximo que tenha um position diferente de static (neste caso, o próprio .card com position: relative). Isso permite que o pseudo-elemento cubra completamente o .card, criando efeitos de camada ou estilos de fundo.
+Resumo
+Juntos, esses estilos são tipicamente usados para criar um efeito de sobreposição ou de fundo em um cartão que pode servir para destacar, sombrear, ou simplesmente adicionar uma camada decorativa sem alterar o conteúdo HTML original do cartão. Isso é útil para designs que requerem estilos dinâmicos ou interativos sem complicar a estrutura HTML.
+*/
