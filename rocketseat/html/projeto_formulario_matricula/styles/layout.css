@@ -1,0 +1,52 @@
+#app {
+  display: grid;
+  grid-template-columns: 51.25% 48.75%;
+
+  height: 100vh;
+  overflow: hidden;
+}
+
+main {
+  overflow: auto; /*Barra de rolagem só no main*/
+  padding: 4rem; /*64/4=16 que é a fonte padrão do nav.*/
+
+  & .main-container { /*Mesmo que chamar main .main-container{} - &=self*/
+    max-width: 33rem;
+    margin-left: auto; /*joga o objeto pra direita, deixando uma marge pra esquerda com o restante após os 33rem*/
+  }
+
+  & .back {
+    display: flex; /*Coloca um ao lado do outro*/
+    align-items: center;
+    gap: .5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  & h1 {
+    font: 600 1.5rem/1.25 var(--font-family);
+    margin-bottom: 0.5rem;
+  }
+}
+
+aside {
+  background-color: var(--surface-secondary);
+  padding: 4rem; /*64/4=16 que é a fonte padrão do nav.*/
+
+  & .aside-container {
+    max-width: 31rem;
+
+    & > img { /*Primeiro nível de imagem dentro da classe .aside-container*/
+      margin-top: 2rem;
+    }
+  }
+
+  & h2 {
+    font: 600 2.5rem/1.25 var(--font-family);
+    margin-bottom: 0.5rem;
+
+    & span {
+      color: var(--text-highlight);
+    }
+  }
+
+}
