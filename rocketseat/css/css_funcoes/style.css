@@ -1,0 +1,18 @@
+div {
+  width: calc(30px + 50px);
+  height: 200px;
+  border: pink solid;
+  background-color: aqua;
+
+  /* filter: blur(10px); */
+  /* filter: brightness(0.5); */
+  /* filter: contrast(0.5); */
+  /* filter: drop-shadow(1rem 1rem 2rem gray); */
+  /* filter: opacity(0.5); */
+
+  /*Movimenta eixo x y*/
+  /* transform: translate(50px, 100px);  */
+  /* transform: rotate(40deg) translateY(11px); */
+
+  
+}

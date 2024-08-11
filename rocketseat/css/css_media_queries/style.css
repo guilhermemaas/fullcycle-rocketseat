@@ -1,0 +1,34 @@
+:root {
+  --bg-color: rebeccapurple;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: white;
+  font-size: 200%;
+}
+
+/* @import url(screen.css) screen and (orientation: portrait); */
+/* screen e print são opcionais */
+@media screen and (min-width: 576px) { 
+/* @media screen and (orientation: portrait){ */
+  /*Breakpoint, a partir de qual momento vai ser interpretado a regra (px, rem, named)*/
+  /* orientation: landscape/portrait */
+  /* prefers-color-schem: dark - Esquema de cor do usuário (sistema)*/
+  /* range: width >, >=, <=, < */
+  /* @media (400px < width < 500px - Entre 400 e 500px de largura */
+  :root {
+    --bg-color: orangered;
+  }
+} 
+
+/* 
+Dicas:
+  Mobile-Firt /Desktop-First
+  https://responsively.app/download
+
+  Unidade de medida relativa: rem, em
+  Padrão 16px
+
+  Arquivos separados? bundler
+*/
